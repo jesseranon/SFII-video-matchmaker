@@ -1,0 +1,230 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hyper Street Fighter 2 Anniversary Edition', 'Press Start 2P', cursive;
+  text-align: right;
+}
+
+a {
+  font-size: 8px;
+  color: orange;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10%;
+  font-weight: bolder;
+  text-shadow: 1px 1px #0544A5;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.tv-frame {
+  height: 450px;
+  width: 575px;
+  margin: auto;
+}
+
+.screen {
+  top: 43px;
+  left: 92.5px;
+  width: 385px;
+  height: 282px;
+}
+
+.tv-frame,
+.canvas {
+  position: relative;
+}
+
+.canvas {
+  margin: auto;
+  top: calc(50% - 112px);
+}
+
+/* .return-to-cs {
+  position: absolute;
+  top: 40px;
+} */
+
+.screen,
+.character-grid,
+.flag-test,
+.flag,
+.player-profile,
+.cursor,
+.cursor-img,
+.p2 {
+  position: absolute;
+}
+
+.character-select-canvas {
+  height: 224px;
+  width: 384px;
+}
+
+.video-player {
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  margin: auto;
+}
+
+.flag-test,
+.flag {
+  height: 25px;
+  width: 34px;
+}
+
+.player-profile {
+  height: 112px;
+  width: 95px;
+  /* z-index: 1; */
+}
+
+.p1-character {
+  bottom: 0;
+  left: 0;
+}
+
+.p2-profile {
+  bottom: 0;
+  right: 0;
+}
+
+.p2-character-nameplate {
+  height: 16px;
+  width: 100%;
+}
+
+.p2-character {
+  transform: scaleX(-1);
+  height: 96px;
+}
+
+.character-grid {
+  width: calc(32px * 4);
+  top: 144px;
+  left: 128px;
+}
+
+.character-portrait {
+  float: left;
+  width: 32px;
+  height: 32px;
+}
+
+.cursor {
+  height: 36px;
+  width: 32px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.p2 {
+  width: 32px;
+  height: 16px;
+  right: 28px;
+  bottom: 112px;
+}
+
+.p2-img {
+  height: 100%;
+  width: 100%;
+  object-fit: stretch;
+}
+
+.p1-cursor-img {
+  top: -130px;
+  left: -203px;
+}
+
+.p2-cursor-img {
+  top: -3px;
+  left: -377px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* BACKGROUNDS */
+
+.tv-frame {
+  background: black url("https://www.my90stv.com/img/tvbackclean.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.screen {
+  background: black;
+}
+
+.character-select-canvas {
+  background: red url("../img/ezgif-5-ff90592890.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+#p1-cursor {
+  background: transparent url("../img/sf2.png") -239px -130px no-repeat;
+}
+
+#p2-cursor {
+  background: transparent url("../img/sf2.png") -377px -43px no-repeat;
+}
+
+/* Z-INDEX */
+
+.game-screen {
+  z-index: 1;
+}
+
+/* ANIMATIONS */
+
+/* .character-portrait:hover {
+  border: 1px solid blue;
+} */
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor-img {
+  /* visibility: hidden; */
+  animation: blink .2s infinite;
+}
+
+#return-click {
+  animation: blink 1s infinite;
+}
+
+.p1-cursor-locked > img,
+.p2-cursor-locked > img {
+  animation: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+		<title>Bad SFII Character Select</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="tv-frame"><!--
+
+			CS SCREEN--><section class="screen game-screen">
+				<section class="canvas character-select-canvas">
+					<div class="character-select"><!-- 
+						character select grid 
+						--><div class="character-grid clearfix">
+							<div class="character-portrait" id="ryu"></div>
+							<div class="character-portrait" id="ehonda"></div>
+							<div class="character-portrait" id="blanka"></div>
+							<div class="character-portrait" id="guile"></div>
+							<div class="character-portrait" id="ken"></div>
+							<div class="character-portrait" id="chunli"></div>
+							<div class="character-portrait" id="zangief"></div>
+							<div class="character-portrait" id="dhalsim"></div>
+						</div><!--
+		
+						character display
+						--><div class="player-profile character p1-character" id="p1-character">
+							
+						</div>
+						<div class="p2" id="p2">
+							<img class="p2-img" src="img/2p.jpg" alt="2P">
+						</div>
+						<div class="player-profile p2-profile">
+							<div class="character p2-character-nameplate" id="p2-character-nameplate"></div>
+							<div class="character p2-character" id="p2-character"></div>
+						</div><!-- 
+						
+						country flags
+						--><div class="flag" id="p1-flag"></div>
+						<div class="flag" id="p2-flag"></div><!--
+						
+						cursors
+						--><div class="cursor" id="p1-cursor">
+							<img class="cursor-img p1-cursor-img" src="img/sf2.png">
+						</div>
+						<div class="cursor" id="p2-cursor">
+							<img class="cursor-img p2-cursor-img" src="img/sf2.png">
+						</div>
+					</div>
+				</section>
+			</section><!-- 
+
+			VIDEO PLAYER SCREEN --><section class="screen video-screen" id="video-screen">
+				<section class="canvas video-player" id="video-player-canvas">
+					<a id="return-click" href="">Click to Reset</a>
+					<iframe id="video-iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
+				</section>
+			</section>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
