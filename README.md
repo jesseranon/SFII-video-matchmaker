@@ -1,9 +1,3 @@
-# SFII-video-matchmaker
-
-Play with it here:
-
-https://efficacious-sudden-smoke.glitch.me/
-
 # Street Fighter II Video Matchmaker
 A clone of the SFII character select screen allows users to choose two fighters and watch a match between the chosen characters.
 
