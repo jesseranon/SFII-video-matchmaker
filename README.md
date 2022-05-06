@@ -4,6 +4,7 @@ A clone of the SFII character select screen allows users to choose two fighters 
 **Link to project:** https://efficacious-sudden-smoke.glitch.me/
 
 <img width="1287" alt="sfii" src="https://user-images.githubusercontent.com/5935095/167144136-9a018337-9689-4f96-bc9c-d6b80ff5baec.png">
+(This screenshot is zoomed in.)
 
 ## How It's Made:
 
